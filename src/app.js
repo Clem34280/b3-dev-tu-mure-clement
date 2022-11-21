@@ -49,12 +49,23 @@ class Triangle {
     getSurface(){
         let P = ((this.coteA + this.coteB + this.coteC)/2);
         let S = Math.sqrt(P*(P-this.coteA)*(P-this.coteB)*(P-this.coteC));
-        let res = S.toFixed(2);
+        let res = Math.round(S*100)/100;
         return res;
+    }
+}
+
+class Circle {
+    constructor (){
+        test
+    }
+
+    getTest(){
+        let test;
     }
 }
 
 module.exports = {
     Cube:Cube,
-    Triangle:Triangle
+    Triangle:Triangle,
+    Circle:Circle
 }
