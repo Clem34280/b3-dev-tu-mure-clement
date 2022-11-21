@@ -43,3 +43,25 @@ describe('Testing The Triangle Functions', function() {
         done();
     });
 });
+
+const Circle = require('../src/app').Circle;
+
+describe('Testing The Circle Functions', function() {
+    it('1. The diameter of the Circle', function(done) {
+        let c1 = new Circle(8);
+        expect(c1.getDiameter()).to.equal(16);
+        done();
+    });
+
+    it('2. The perimeter of the Circle', function(done) {
+        let c2 = new Circle(22);
+        expect(c2.getPerimeterC()).to.equal(138.16);
+        done();
+    });
+
+    it('3. The surface of the Circle', function(done) {
+        let c3 = new Circle(13);
+        expect(c3.getSurfaceC()).to.equal(530.66);
+        done();
+    });
+});
