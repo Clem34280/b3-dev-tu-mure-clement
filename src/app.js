@@ -55,12 +55,23 @@ class Triangle {
 }
 
 class Circle {
-    constructor (){
-        test
+    constructor (rayon){
+        this.rayon = rayon;
     }
 
-    getTest(){
-        let test;
+    getDiameter(){
+        let diam = this.rayon*2;
+        return diam;
+    }
+
+    getPerimeterC(){
+        let perim = (this.rayon*2)*(Math.round(Math.PI*100)/100);
+        return perim;
+    }
+
+    getSurfaceC(){
+        let S = (this.rayon*this.rayon)*(Math.round(Math.PI*100)/100);
+        return S;
     }
 }
 
