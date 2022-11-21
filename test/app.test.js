@@ -28,15 +28,18 @@ describe('Testing The Triangle Functions', function() {
     it('1. The Type of the Triangle', function(done) {
         let t1 = new Triangle(2, 4, 2);
         expect(t1.getType()).to.equal('Isocèle');
+        done();
     });
 
     it('2. The perimeter of the Triangle', function(done) {
         let t2 = new Triangle(3, 7, 5);
         expect(t2.getPerimeter()).to.equal('15');
+        done();
     });
 
     it('3. The surface of the Triangle', function(done) {
         let t3 = new Triangle(12, 8, 15);
         expect(t3.getSurface()).to.equal('47.81');
+        done();
     });
 });
